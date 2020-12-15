@@ -1,0 +1,21 @@
+using System;
+
+namespace factorizar
+{
+    class Program
+    {
+        static int factorizar(int n)
+        {
+            int product = 1;
+            for (int i = 1; i <= n;i++)
+            {
+                product = i * product;
+            }
+            return product;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(factorizar(5));
+        }
+    }
+}
